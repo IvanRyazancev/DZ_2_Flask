@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ввод данных пользователя</title>
 </head>
 <body>
-
+    <h2>Введите ваше имя и электронную почту</h2>
+    <form action="/welcome" method="post">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="email" name="email" placeholder="Электронная почта" required>
+        <button type="submit">Отправить</button>
+    </form>
 </body>
 </html>
